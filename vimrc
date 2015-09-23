@@ -17,9 +17,9 @@ map <DOWN> gj
 map <UP> gk
 
 "TeX
-vmap \s{ :s/\(.*\)/\\section{'\1'}<ENTER>$
-vmap \ss{ :s/\(.*\)/\\subsection{'\1'}<ENTER>$
-vmap \sss{ :s/\(.*\)/\\subsubsection{'\1'}<ENTER>$
+vmap \s{ :s/\(.*\)/\\section{\1}<ENTER>$
+vmap \ss{ :s/\(.*\)/\\subsection{\1}<ENTER>$
+vmap \sss{ :s/\(.*\)/\\subsubsection{\1}<ENTER>$
 
 imap \s{ \section{}<LEFT>
 imap \ss{ \subsection{}<LEFT>
