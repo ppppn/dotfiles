@@ -17,11 +17,14 @@ map <DOWN> gj
 map <UP> gk
 
 "TeX
-vmap \s{ :s/\(.*\)/\\section{'\1'}<ENTER>$
-vmap \ss{ :s/\(.*\)/\\subsection{'\1'}<ENTER>$
-vmap \sss{ :s/\(.*\)/\\subsubsection{'\1'}<ENTER>$
+vmap \s[ :s/\%V\(.*\)/\\section{'\1'}<ENTER>$
+vmap \ss[ :s/\%V\(.*\)/\\subsection{'\1'}<ENTER>$
+vmap \sss[ :s/\%V\(.*\)/\\subsubsection{'\1'}<ENTER>$
 
-imap \s{ \section{}<LEFT>
-imap \ss{ \subsection{}<LEFT>
-imap \sss{ \subsection{}<LEFT>
+vmap \im :s/\%V\(.*\)\%V/\\item{\1}/g<ENTER>
 
+vmap \it :s/\%V\(.*\)\%V/{\\it \1}/g<ENTER>
+
+imap \s[ \section{}<LEFT>
+imap \ss[ \subsection{}<LEFT>
+imap \sss[ \subsection{}<LEFT>
