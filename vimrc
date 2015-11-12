@@ -9,7 +9,7 @@ set smartindent
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp
 
-"カーソル
+"カーソル・線
 set cursorline
 map j gj
 map k gk
@@ -28,3 +28,5 @@ vmap \it :s/\%V\(.*\)\%V/{\\it \1}/g<ENTER>
 imap \s[ \section{}<LEFT>
 imap \ss[ \subsection{}<LEFT>
 imap \sss[ \subsection{}<LEFT>
+
+imap \en[ \endnote{}<LEFT>
