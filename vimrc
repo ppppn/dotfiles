@@ -27,6 +27,6 @@ vmap \it :s/\%V\(.*\)\%V/{\\it \1}/g<ENTER>
 
 imap \s[ \section{}<LEFT>
 imap \ss[ \subsection{}<LEFT>
-imap \sss[ \subsection{}<LEFT>
+imap \sss[ \subsubsection{}<LEFT>
 
 imap \en[ \endnote{}<LEFT>
